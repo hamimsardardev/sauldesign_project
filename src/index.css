@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #222831;
+  --color-primary-white: #EEEEEE;
+  --color-secondery: #00ADB5;
+  --font-poppins: "Poppins", sans-serif;
+}
+
+
+@layer components {
+  .container {
+    @apply mx-auto !max-w-[1240px] px-2.5 xl:px-0;
+  }
+
+  .list {
+    @apply text-lg text-primary-white font-normal relative hover:text-secondery after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:bg-secondery after:w-0 hover:after:w-full after:h-1;
+  }
+
+  .container {
+    @apply w-[1240px] mx-auto;
+  }
+
+  .button {
+    @apply bg-[#393E46] text-primary-white py-2.5 px-4 lg:px-8 rounded-full lg:text-lg font-bold hover:bg-secondery;
+  }
+
+  .recentbtn {
+    @apply bg-[#393E46] text-primary-white py-1.5 lg:py-2.5 px-4 lg:px-8 rounded-full text-lg font-bold hover:bg-secondery;
+  }
+
+  .footerbtn {
+    @apply hover:bg-secondery text-primary-white flex h-[48px] w-[48px] items-center justify-center rounded-full bg-[#393E46] text-[24px]
+  }
+}
+
+@layer {
+  .btn {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  }
+}
