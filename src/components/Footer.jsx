@@ -8,10 +8,12 @@ import { FaTwitter } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { BsPersonWorkspace } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import ScrollToTop from "./ScrollToTop";
 
 const Footer = () => {
   return (
     <>
+    <ScrollToTop/>
       <footer>
         <div className="container">
           <div className="mt-10 flex justify-center pb-4 lg:mt-25 lg:pb-9">

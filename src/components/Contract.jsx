@@ -1,10 +1,12 @@
 import React from "react";
 import projectimage from "../assets/images/projectimage.png";
 import { BsSend } from "react-icons/bs";
+import ScrollToTop from "./ScrollToTop";
 
 const Contract = () => {
   return (
     <div>
+      <ScrollToTop/>
       <section className="border-primary-white/10 mt-[100px] border-b pb-[100px] lg:mt-[258px] lg:pb-[258px]">
         <div className="container">
           <div className="flex flex-col lg:flex-row">

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import AboutImage from "../assets/images/aboutimage.png";
+import ScrollToTop from "./ScrollToTop";
+
 const About = () => {
   const [readmore, setReadmore ]=useState(false);
   const handleReadToggle =() =>{
@@ -7,6 +9,7 @@ const About = () => {
   };
   return (
     <>
+    <ScrollToTop/>
       <section className="border-primary-white/10 border-b">
         <div className="container">
           <div className="mt-[20px] flex flex-col lg:mt-[230px] lg:flex-row">

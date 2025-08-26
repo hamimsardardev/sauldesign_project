@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import recentone from "../assets/images/recentone.png";
 import recenttwo from "../assets/images/recenttwo.png";
 import recentthree from "../assets/images/recentthree.png";
+import ScrollToTop from "./ScrollToTop";
 
 const Recent = () => {
   let [activenumber, setActive] = useState(1);
@@ -10,6 +11,7 @@ const Recent = () => {
   };
   return (
     <>
+    <ScrollToTop/>
       <section className='mt-[50px] bg-[url("assets/images/recentimage.png")] bg-cover bg-center bg-no-repeat lg:mt-[132px]'>
         <div className="container">
           <h2 className="text-primary-white pt-25 text-5xl text-[36px] font-bold lg:pt-[268px] lg:text-[64px] lg:leading-24">
