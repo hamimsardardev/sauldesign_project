@@ -1,22 +1,31 @@
 import React from "react";
-import Header from "./components/Header";
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter } from "react-router";
+import { RouterProvider } from "react-router/dom";
+import RootLayout from "./components/RootLayout";
+import Home from "./components/Home";
 import Banner from "./components/Banner";
 import About from "./components/About";
 import Recent from "./components/Recent";
-import Project from "./components/Project";
-import Footer from "./components/Footer";
+import Contract from "./components/Contract";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    Component: RootLayout,
+    children: [
+      { index: true, Component: Home },
+      { path: "/banner", Component:Banner },
+      { path: "/about", Component:About  },
+      { path: "/recent", Component:Recent  },
+      { path: "/contract", Component:Contract  },
+    ],
+  },
+]);
 
 const App = () => {
-  return (
-    <div>
-      <Header />
-      <Banner />
-      <About />
-      <Recent />
-      <Project />
-      <Footer />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 };
+
 
 export default App;

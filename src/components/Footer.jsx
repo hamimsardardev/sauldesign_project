@@ -6,6 +6,8 @@ import { FiFacebook } from "react-icons/fi";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
+import { BsPersonWorkspace } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -16,15 +18,19 @@ const Footer = () => {
             <ul className="flex gap-4 lg:gap-12">
               <li className="text-primary-white font-regular hover:text-secondery flex items-center justify-center gap-[10px] text-[18px]">
                 <FaHome />
-                <a href="#">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li className="text-primary-white font-regular hover:text-secondery flex items-center justify-center gap-[10px] text-[18px]">
                 <IoPersonOutline />
-                <a href="#">About me</a>
+                <Link to="/About">About me</Link>
+              </li>
+              <li className="text-primary-white font-regular hover:text-secondery flex items-center justify-center gap-[10px] text-[18px]">
+                <BsPersonWorkspace />
+                <Link to="/recent">Work</Link>
               </li>
               <li className="text-primary-white font-regular hover:text-secondery flex items-center justify-center gap-[10px] text-[18px]">
                 <FaYoutube />
-                <a href="#">Contact</a>
+                <Link to="/Contract">Contact</Link>
               </li>
             </ul>
           </div>
