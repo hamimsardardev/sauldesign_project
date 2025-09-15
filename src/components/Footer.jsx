@@ -17,7 +17,7 @@ const Footer = () => {
       <footer>
         <div className="container">
           <div className="mt-10 flex justify-center pb-4 lg:mt-25 lg:pb-9">
-            <ul className="flex gap-4 lg:gap-12">
+            <ul className="grid grid-cols-2 sm:flex sm:gap-3 md:flex md:gap-2 lg:gap-12">
               <li className="text-primary-white font-regular hover:text-secondery flex items-center justify-center gap-[10px] text-[18px]">
                 <FaHome />
                 <Link to="/">Home</Link>
@@ -58,9 +58,11 @@ const Footer = () => {
               </a>
             </button>
           </div>
-          <h3 className="text-primary-white/75 font-regular pb-12 text-end text-[18px]">
+          <div >
+          <h3 className="text-primary-white/75 font-regular pb-12 lg:text-end text-center text-[18px] ">
             Terms of Service - Privacy Policy
           </h3>
+          </div>
         </div>
       </footer>
     </>
